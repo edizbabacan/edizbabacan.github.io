@@ -3,6 +3,15 @@ body {
 	font-family: sans-serif;
 }
 
-a, h1, p{
+h1, p{
 	color: white;
+}
+
+a{
+	color: white
+
+}
+
+a:hover {
+	color: yellow;
 }
