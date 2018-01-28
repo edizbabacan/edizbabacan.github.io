@@ -1,17 +1,23 @@
 body {
-	background-color: navy;
-	font-family: sans-serif;
+	background-color: #000080;
+	font-family: Arial, sans-serif;
 }
 
-h1, p{
-	color: white;
+h1, h3{
+	color: #FFFFFF;	
+	text-transform: uppercase;
+}
+
+p{
+	color: #FFFFFF;
+	font-family: "Courier new", sans-serif;
 }
 
 a{
-	color: white
-
+	color: #FFFFFF;
+	font-style: italic;
 }
 
 a:hover {
-	color: yellow;
+	color: #FFFF00;
 }
