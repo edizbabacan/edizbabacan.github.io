@@ -1,23 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates|Taviraj);
+
+@keyframes link-underline {
+    from {border-bottom: 1px none;}
+    to {border-bottom: 1px solid;}
+}
+
 body {
-	background-color: #000080;
-	font-family: Arial, sans-serif;
+	background-image: url("unit-3-background-image.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	font-family: "Taviraj", sans-serif;
+	font-size:16px;
+	margin: 1.5em;
+	color: #FFFFFF
 }
 
 h1, h3{
-	color: #FFFFFF;	
 	text-transform: uppercase;
+	font-family: "Montserrat";
 }
 
-p{
-	color: #FFFFFF;
-	font-family: "Courier new", sans-serif;
+h1 {
+	font-size: 2.2em;
 }
 
-a{
+h3 {
+	font-size: 1.8em;
+}
+
+p, ul{
+	font-size: 1em;
+	width: 30em;
+}
+
+a:link{
 	color: #FFFFFF;
 	font-style: italic;
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
+
+a:visited{
+	color: #FF00FF;
+	text-decoration: none;
 }
 
 a:hover {
 	color: #FFFF00;
+	text-decoration: none;
+	animation-name: link-underline;
+    animation-duration: .5s;
+    transition: ease-in-out
+}
+
+form{
+	background-color: #00b383;
+	max-width: 30em;
+}
+
+#slogan{
+	font-style: italic;
+	font-size: 1.3em;
 }
