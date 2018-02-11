@@ -19,23 +19,45 @@
 
 		<p><a href="mailto:ediz@ediz.com?Subject=Easy%20Tennis%20Scores%20enquiry">Contact us.</a></p>
 
-		<form action="/action_page.php" autocomplete="on">
+		<form action="#" autocomplete="on">
 			<select name="round">
-				<option value="1">Round 1</option>
-				<option value="2">Round 2</option>
-				<option value="3">Round 3</option>
-				<option value="4">Round 4</option>
+				<option value="round-1">Round 1 - 8th Feb</option>
+				<option value="round-2">Round 2 - 15th Feb</option>
+				<option value="round-3">Round 3 - 22nd Feb</option>
+				<option value="round-4">Round 4 - 1st Mar</option>
 			</select>
 			<br>
-			<select name="Home team">
-				<option value="Oak Park">Oak Park</option>
-				<option value="Greenvale">Greenvale</option>
-				<option value="Hadfield">Hadfield</option>
-				<option value="Glenroy">Glenroy</option>
+			<select name="grade">
+				<option value="bg1">B Grade 1</option>
+				<option value="bg2">B Grade 2</option>
+				<option value="bg3">B Grade 3</option>
+				<option value="bg4">B Grade 4</option>
 			</select>
-  		<br>
+			<br>
+			<select name="home-team">
+				<option value="oak-park">Oak Park</option>
+				<option value="greenvale">Greenvale</option>
+				<option value="hadfield">Hadfield</option>
+				<option value="glenroy">Glenroy</option>
+			</select>
+  			<br>
+  			<fieldset>
+	  			<input type="radio" name="home-player" value="player-1" checked="true"> Player 1 <br>
+	  			<input type="radio" name="home-player" value="player-2"> Player 2 <br>
+	  			<input type="radio" name="home-player" value="player-3"> Player 3 <br>
+	  			<input type="radio" name="home-player" value="player-4"> Player 4 <br>
+	  			<input type="radio" name="home-player" value="player-5"> Player 5 <br>
+  			</fieldset>
+  			<br>
+  			<fieldset>
+	  			<input type="radio" name="away-player" value="player-1" checked="true"> Player 1 <br>
+	  			<input type="radio" name="away-player" value="player-2"> Player 2 <br>
+	  			<input type="radio" name="away-player" value="player-3"> Player 3 <br>
+	  			<input type="radio" name="away-player" value="player-4"> Player 4 <br>
+	  			<input type="radio" name="away-player" value="player-5"> Player 5 <br>
+  			</fieldset>
+  			<br>  			
   		<input type="submit">
 		</form>
-		
 	</body>
 </html>

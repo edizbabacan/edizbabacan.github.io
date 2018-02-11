@@ -23,3 +23,13 @@ a{
 a:hover {
 	color: #FFFF00;
 }
+
+form{
+	background-color: #00FF00
+}
+
+#slogan{
+	font-style: italic;
+	font-family: Arial, sans-serif;
+	font-size: 24px;
+}
