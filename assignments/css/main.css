@@ -1,3 +1,9 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates|Taviraj);
 
 @keyframes link-underline {
@@ -12,7 +18,7 @@ body {
 	font-family: "Taviraj", sans-serif;
 	font-size:16px;
 	margin: 1.5em;
-	color: #FFFFFF
+	color: #FFFFFF;
 }
 
 h1, h3{
@@ -28,19 +34,20 @@ h3 {
 	font-size: 1.8em;
 }
 
-p, ul{
+p, ul, li{
 	font-size: 1em;
+	margin: 1em;
 }
 
 a:link{
-	color: #FFFFFF;
+	color: white;
 	font-style: italic;
 	text-decoration: none;
 	border-bottom: 1px solid;
 }
 
 a:visited{
-	color: #FF00FF;
+	color: #FFFF00;
 	text-decoration: none;
 }
 
@@ -63,8 +70,9 @@ form{
 }
 
 .main-wrapper {
+	max-width: 1400px;
 	background: rgb(91, 155, 213);
-	margin: 1em;
+	margin: 0 auto;
 	padding: 1em;
 	border: .25em rgb(61,125,183) solid;
 }
@@ -97,11 +105,14 @@ form{
 	border: .25em rgb(225,162,0) solid;
 }
 
-.block-nav{
+.block-nav li{
 	background: rgb(112, 48, 160);
 	margin: 1em;
 	padding: 1em;
 	border: .25em rgb(82, 18, 130) solid;
+	list-style: none;
+	float: left;
+	max-width: 25%;
 }
 
 .hp-content {
@@ -130,4 +141,13 @@ form{
 	margin: 1em;
 	padding: 1em;
 	border: .25em rgb(207, 95, 19) solid;
+}
+
+.clearfix:after {
+	display: block;
+	content: " ";
+	clear: both;
+	font-size: 0;
+	visibility: hidden;
+	height: 0;
 }
