@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 
+@import url("reset.css")
 @import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates|Taviraj);
 
 @keyframes link-underline {
