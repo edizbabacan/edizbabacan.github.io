@@ -30,7 +30,6 @@ h3 {
 
 p, ul{
 	font-size: 1em;
-	width: 30em;
 }
 
 a:link{
@@ -61,4 +60,74 @@ form{
 #slogan{
 	font-style: italic;
 	font-size: 1.3em;
+}
+
+.main-wrapper {
+	background: rgb(91, 155, 213);
+	margin: 1em;
+	padding: 1em;
+	border: .25em rgb(61,125,183) solid;
+}
+
+.header {
+	background: rgb(237, 125, 49);
+	margin: 1em;
+	padding: 1em;
+	border: .25em rgb(207, 95, 19) solid;
+}
+
+.primary-nav {
+	background: rgb(218, 227, 243);
+	margin: 1em;
+	padding: 1em;
+	border: .25em rgb(188, 197, 213) solid;
+}
+
+.important-information {
+	background: rgb(165, 165, 165);
+	margin: 1em;
+	padding: 1em;
+	border: .25em rgb(135, 135, 135) solid;
+}
+
+.hp-on-page-nav {
+	background: rgb(255, 192, 0);
+	margin: 1em;
+	padding: 1em;
+	border: .25em rgb(225,162,0) solid;
+}
+
+.block-nav{
+	background: rgb(112, 48, 160);
+	margin: 1em;
+	padding: 1em;
+	border: .25em rgb(82, 18, 130) solid;
+}
+
+.hp-content {
+	background: rgb(112, 48, 160);
+	margin: 1em;
+	padding: 1em;
+	border: .25em rgb(82, 18, 130) solid;
+}
+
+.footer {
+	background: rgb(112, 173, 71);
+	margin: 1em;
+	padding: 1em;
+	border: .25em rgb(82, 143, 41) solid;
+}
+
+.contact-links {
+	background: rgb(91, 155, 213);
+	margin: 1em;
+	padding: 1em;
+	border: .25em rgb(61,125,183) solid;
+}
+
+.footer-links {
+	background: rgb(237, 125, 49);
+	margin: 1em;
+	padding: 1em;
+	border: .25em rgb(207, 95, 19) solid;
 }
