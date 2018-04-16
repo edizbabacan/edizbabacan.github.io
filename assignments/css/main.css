@@ -135,6 +135,8 @@ form{
 	margin: 1em;
 	padding: 1em;
 	border: .25em rgb(61,125,183) solid;
+	width: 30%;
+	float: left;
 }
 
 .footer-links {
@@ -142,6 +144,8 @@ form{
 	margin: 1em;
 	padding: 1em;
 	border: .25em rgb(207, 95, 19) solid;
+	width: 60%;
+	float: right;
 }
 
 .clearfix:after {
