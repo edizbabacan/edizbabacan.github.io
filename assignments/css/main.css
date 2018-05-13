@@ -18,7 +18,7 @@ body {
 	background-repeat: no-repeat;
 	font-family: "Taviraj", sans-serif;
 	font-size:16px;
-	margin: 1.5em;
+	margin: 1.5em auto;
 	color: #FFFFFF;
 }
 
@@ -71,7 +71,7 @@ form{
 }
 
 .main-wrapper {
-	max-width: 1400px;
+	max-width: 1100px;
 	background: rgb(91, 155, 213);
 	margin: 0 auto;
 	padding: 1em;
@@ -80,72 +80,74 @@ form{
 
 .header {
 	background: rgb(237, 125, 49);
-	margin: 1em;
+	margin: 2%;
 	padding: 1em;
 	border: .25em rgb(207, 95, 19) solid;
 }
 
 .primary-nav {
 	background: rgb(218, 227, 243);
-	margin: 1em;
+	margin: 2%;
 	padding: 1em;
 	border: .25em rgb(188, 197, 213) solid;
 }
 
 .important-information {
 	background: rgb(165, 165, 165);
-	margin: 1em;
+	margin: 2%;
 	padding: 1em;
 	border: .25em rgb(135, 135, 135) solid;
 }
 
 .hp-on-page-nav {
 	background: rgb(255, 192, 0);
-	margin: 1em;
+	margin: 2%;
 	padding: 1em;
 	border: .25em rgb(225,162,0) solid;
 }
 
 .block-nav li{
 	background: rgb(112, 48, 160);
-	margin: 1em;
+	margin: 1%;
 	padding: 1em;
 	border: .25em rgb(82, 18, 130) solid;
 	list-style: none;
 	float: left;
-	max-width: 25%;
+	width: 23%;
+	min-height: 5em;
+	text-align: center;
 }
 
 .hp-content {
 	background: rgb(112, 48, 160);
-	margin: 1em;
+	margin: 2%;
 	padding: 1em;
 	border: .25em rgb(82, 18, 130) solid;
 }
 
 .footer {
 	background: rgb(112, 173, 71);
-	margin: 1em;
+	margin: 2%;
 	padding: 1em;
 	border: .25em rgb(82, 143, 41) solid;
 }
 
 .contact-links {
 	background: rgb(91, 155, 213);
-	margin: 1em;
+	margin: 2%;
 	padding: 1em;
 	border: .25em rgb(61,125,183) solid;
-	width: 30%;
+	width: 26%;
 	float: left;
 }
 
 .footer-links {
 	background: rgb(237, 125, 49);
-	margin: 1em;
+	margin: 2%;
 	padding: 1em;
 	border: .25em rgb(207, 95, 19) solid;
-	width: 60%;
-	float: right;
+	width: 66%;
+	display: inline-block;
 }
 
 .clearfix:after {
@@ -155,4 +157,62 @@ form{
 	font-size: 0;
 	visibility: hidden;
 	height: 0;
+}
+
+@media (max-width: 1024px) {
+	body {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 425px) {
+	body {
+		font-size: 13px;
+	}
+
+	.block-nav li{
+		width: 48%;
+	}
+
+	.contact-links{
+		display: block;
+		width: 100%;
+		float: none;
+	}
+
+	.footer-links{
+		display: block;
+		width: 100%;
+		float: none;
+	}
+}
+
+@media (max-width: 320px) {
+	body {
+	font-size: 12px;
+	}
+
+	.block-nav li{
+		display: block;
+		width: 100%;
+		float: none;
+	}
+
+	.contact-links{
+		display: block;
+		width: 100%;
+		float: none;
+	}
+
+	.footer-links{
+		display: block;
+		width: 100%;
+		float: none;
+	}
 }
