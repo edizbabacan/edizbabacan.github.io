@@ -1,20 +1,367 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Ediz Babacan - GA circuits</title>
-		<meta name="robots" content="noindex, nofollow">
-		<meta name="theme-color" content="navy">
-		<link rel="stylesheet" type="text/css" href="./assignments/css/main.css">
-	</head>
-	<body>
-		<h1>Ediz Babacan GA circuits</h1>
-		<p>Links to the different units of work</p>
-		<p><a href="./assignments/unit-1.html">Unit 1</a></p>
-		<p><a href="./assignments/unit-2.html">Unit 2</a></p>
-		<p><a href="./assignments/unit-3.html">Unit 3</a></p>
-		<p><a href="./assignments/unit-4.html">Unit 4</a></p>
-		<p><a href="./assignments/unit-5.html">Unit 5</a></p>
-		<p><a href="./assignments/unit-6.html">Unit 6</a></p>
-		<p><a href="./assignments/unit-8.html">Unit 8</a></p>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elite Auto Care - Premium car detailing and maintenance services">
+    <title>Elite Auto Care - Premium Detailing & Maintenance</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">🚗 Elite Auto Care</div>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="btn" onclick="scrollToPricing()">Book Now</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Premium Care for<br><span class="gradient-text">Your Vehicle</span></h1>
+            <p>Professional detailing and maintenance services that keep your car looking showroom fresh</p>
+            <div class="hero-buttons">
+                <button class="btn" onclick="scrollToPricing()">Get Started</button>
+                <button class="btn btn-outline" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">View Services</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">✓</div>
+                    <h3>Full Detail</h3>
+                    <p>Complete interior and exterior detailing including wash, wax, polish, and deep cleaning of all surfaces.</p>
+                    <ul>
+                        <li>• Hand wash & dry</li>
+                        <li>• Paint correction</li>
+                        <li>• Interior deep clean</li>
+                        <li>• Ceramic coating option</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚙</div>
+                    <h3>Maintenance</h3>
+                    <p>Regular maintenance services to keep your vehicle running smoothly and efficiently.</p>
+                    <ul>
+                        <li>• Oil changes</li>
+                        <li>• Brake inspection</li>
+                        <li>• Tire rotation</li>
+                        <li>• Fluid top-ups</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🛡</div>
+                    <h3>Paint Protection</h3>
+                    <p>Advanced protection solutions to preserve your vehicle's paint and finish for years.</p>
+                    <ul>
+                        <li>• Ceramic coating</li>
+                        <li>• Paint sealant</li>
+                        <li>• PPF installation</li>
+                        <li>• Scratch removal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-container">
+                <div class="stats-grid">
+                    <div>
+                        <div class="stat-number">2500+</div>
+                        <div class="stat-label">Cars Serviced</div>
+                    </div>
+                    <div>
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                    <div>
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="stat-number">5★</div>
+                        <div class="stat-label">Average Rating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section with Stepper -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Build Your <span class="gradient-text">Package</span></h2>
+            
+            <div class="stepper-container">
+                <!-- Stepper Header -->
+                <div class="stepper-header">
+                    <div class="step active" id="step-1-header">
+                        <div class="step-circle" data-step="1"></div>
+                        <div class="step-label">Choose Detailing</div>
+                    </div>
+                    <div class="step" id="step-2-header">
+                        <div class="step-circle" data-step="2"></div>
+                        <div class="step-label">Choose Maintenance</div>
+                    </div>
+                    <div class="step" id="step-3-header">
+                        <div class="step-circle" data-step="3"></div>
+                        <div class="step-label">Review & Book</div>
+                    </div>
+                </div>
+
+                <!-- Step 1: Detailing -->
+                <div class="step-content active" id="step-1">
+                    <h3 style="text-align: center; font-size: 2rem; margin-bottom: 2rem;">Select Your Detailing Package</h3>
+                    <div class="pricing-grid">
+                        <div class="pricing-card" onclick="selectOption('detailing', 'Basic', 500, false)">
+                            <h3>Basic</h3>
+                            <div class="price">$500<span>/month</span></div>
+                            <p style="color: #b8b8d1; margin-bottom: 1rem;">1 Clean per month</p>
+                            <ul>
+                                <li>✓ Exterior wash & wax</li>
+                                <li>✓ Interior vacuum</li>
+                                <li>✓ Window cleaning</li>
+                                <li>✓ Tire shine</li>
+                                <li>✓ Basic interior wipe down</li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing-card featured" onclick="selectOption('detailing', 'Premium', 900, false)">
+                            <div class="featured-badge">Most Popular</div>
+                            <h3>Premium</h3>
+                            <div class="price">$900<span>/month</span></div>
+                            <p style="color: #b8b8d1; margin-bottom: 1rem;">2 Cleans per month</p>
+                            <ul>
+                                <li>✓ Everything in Basic</li>
+                                <li>✓ Paint correction</li>
+                                <li>✓ Deep interior clean</li>
+                                <li>✓ Engine bay cleaning</li>
+                                <li>✓ Leather conditioning</li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing-card" onclick="selectOption('detailing', 'Platinum', 1600, false)">
+                            <h3>Platinum</h3>
+                            <div class="price">$1,600<span>/month</span></div>
+                            <p style="color: #b8b8d1; margin-bottom: 1rem;">Premium service</p>
+                            <ul>
+                                <li>✓ Everything in Premium</li>
+                                <li>✓ Ceramic coating maintenance</li>
+                                <li>✓ Paint protection film care</li>
+                                <li>✓ Priority scheduling</li>
+                                <li>✓ Unlimited touch-ups</li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing-card" onclick="contactForCustom('detailing')">
+                            <h3>Custom</h3>
+                            <div class="price">Contact<span> us</span></div>
+                            <p style="color: #b8b8d1; margin-bottom: 1rem;">Tailored to your needs</p>
+                            <ul>
+                                <li>✓ Customized service schedule</li>
+                                <li>✓ Bespoke package design</li>
+                                <li>✓ Fleet services available</li>
+                                <li>✓ Special requirements</li>
+                                <li>✓ Dedicated account manager</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="adhoc-option">
+                        <div class="pricing-card" onclick="selectOption('detailing', 'Ad Hoc', 700, true)">
+                            <h3>One-Time Service</h3>
+                            <div class="price">$700<span>/call out</span></div>
+                            <p style="color: #b8b8d1; margin-bottom: 1rem;">Perfect for special occasions</p>
+                            <ul>
+                                <li>✓ Complete detailing service</li>
+                                <li>✓ No commitment required</li>
+                                <li>✓ Same premium quality</li>
+                                <li>✓ Flexible scheduling</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="stepper-actions">
+                        <button class="btn btn-outline" onclick="skipStep('detailing')">Skip Detailing</button>
+                        <button class="btn" id="next-1" disabled onclick="nextStep(1)">Continue to Maintenance →</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Maintenance -->
+                <div class="step-content" id="step-2">
+                    <h3 style="text-align: center; font-size: 2rem; margin-bottom: 2rem;">Select Your Maintenance Plan</h3>
+                    <div class="pricing-grid">
+                        <div class="pricing-card" onclick="selectOption('maintenance', 'Basic', 500, false)">
+                            <h3>Basic</h3>
+                            <div class="price">$500<span>/month</span></div>
+                            <p style="color: #b8b8d1; margin-bottom: 1rem;">1 Call out per month</p>
+                            <ul>
+                                <li>✓ Basic maintenance check</li>
+                                <li>✓ Oil and fluid levels</li>
+                                <li>✓ Tire pressure check</li>
+                                <li>✓ Battery inspection</li>
+                                <li>✓ Vehicle preparation</li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing-card featured" onclick="selectOption('maintenance', 'Premium', 900, false)">
+                            <div class="featured-badge">Most Popular</div>
+                            <h3>Premium</h3>
+                            <div class="price">$900<span>/month</span></div>
+                            <p style="color: #b8b8d1; margin-bottom: 1rem;">2 Call outs per month</p>
+                            <ul>
+                                <li>✓ Everything in Basic</li>
+                                <li>✓ Brake system check</li>
+                                <li>✓ Filter replacements</li>
+                                <li>✓ Fluid top-ups included</li>
+                                <li>✓ Minor adjustments</li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing-card" onclick="selectOption('maintenance', 'Platinum', 1600, false)">
+                            <h3>Platinum</h3>
+                            <div class="price">$1,600<span>/month</span></div>
+                            <p style="color: #b8b8d1; margin-bottom: 1rem;">Unlimited call outs</p>
+                            <ul>
+                                <li>✓ Everything in Premium</li>
+                                <li>✓ Unlimited service visits</li>
+                                <li>✓ Priority response time</li>
+                                <li>✓ Comprehensive diagnostics</li>
+                                <li>✓ Emergency call out included</li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing-card" onclick="contactForCustom('maintenance')">
+                            <h3>Custom</h3>
+                            <div class="price">Contact<span> us</span></div>
+                            <p style="color: #b8b8d1; margin-bottom: 1rem;">Tailored to your needs</p>
+                            <ul>
+                                <li>✓ Custom service schedule</li>
+                                <li>✓ Bespoke maintenance plan</li>
+                                <li>✓ Fleet services available</li>
+                                <li>✓ Specialized requirements</li>
+                                <li>✓ Dedicated technician</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="adhoc-option">
+                        <div class="pricing-card" onclick="selectOption('maintenance', 'Ad Hoc', 700, true)">
+                            <h3>One-Time Service</h3>
+                            <div class="price">$700<span>/call out</span></div>
+                            <p style="color: #b8b8d1; margin-bottom: 1rem;">Perfect for one-off maintenance</p>
+                            <ul>
+                                <li>✓ Complete maintenance service</li>
+                                <li>✓ No commitment required</li>
+                                <li>✓ Professional diagnostics</li>
+                                <li>✓ Flexible scheduling</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="stepper-actions">
+                        <button class="btn btn-outline" onclick="prevStep(2)">← Back to Detailing</button>
+                        <div style="display: flex; gap: 1rem;">
+                            <button class="btn btn-outline" onclick="skipStep('maintenance')">Skip Maintenance</button>
+                            <button class="btn" id="next-2" disabled onclick="nextStep(2)">Review Package →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Review -->
+                <div class="step-content" id="step-3">
+                    <h3 style="text-align: center; font-size: 2rem; margin-bottom: 2rem;">Review Your Package</h3>
+                    
+                    <div id="review-summary">
+                        <!-- Dynamic content will be inserted here -->
+                    </div>
+
+                    <div class="stepper-actions">
+                        <button class="btn btn-outline" onclick="prevStep(3)">← Back to Maintenance</button>
+                        <button class="btn" onclick="proceedToBooking()">Book Now →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-container">
+                <h2>Ready to <span class="gradient-text">Get Started?</span></h2>
+                <p>Complete your booking and we'll be in touch shortly</p>
+                <form onsubmit="handleSubmit(event)">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="tel" placeholder="Phone Number" required>
+                        <input type="text" id="selected-package-input" placeholder="Selected Package" readonly>
+                    </div>
+                    <textarea placeholder="Additional Details or Special Requirements"></textarea>
+                    <button type="submit" class="btn" style="width: 100%;">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Elite Auto Care</h4>
+                    <p style="color: #b8b8d1;">Premium detailing and maintenance services for your vehicle.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Full Detail</a></li>
+                        <li><a href="#">Maintenance</a></li>
+                        <li><a href="#">Paint Protection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>123 Auto Street</li>
+                        <li>Phone: (555) 123-4567</li>
+                        <li>info@eliteautocare.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Elite Auto Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
 </html>
